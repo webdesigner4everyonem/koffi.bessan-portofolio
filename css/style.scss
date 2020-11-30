@@ -1,0 +1,366 @@
+$back: #fff8ea;
+$snow: #ffefce;
+$rosita: #fdc8cc;
+$masclarito: #c9a166;
+$clarito: #aa7a31;
+$rusty: rgb(158, 81, 9);
+$darkrusty:rgba(65, 34, 7, 0.884);
+$azulcito: #02002cdc;
+$azulote: #01001fc4;
+$azulotef:#01001fe8;
+$azulotec: #01001f49;
+$dark: #01001fc4;
+
+html {
+    scroll-behavior: smooth;
+    background-color: $back;
+  }
+
+header {
+    position: absolute;
+    width: 100%;
+    z-index: 3;
+    .navbar a {
+        color:$snow;
+        
+    }
+    .navbar a:hover {
+        color:$clarito; 
+    }
+    a.logo {
+        font-family: jubilat, serif;
+        font-weight: 400;
+        font-style: italic;
+        font-size: 1.7em;
+        color: $masclarito;
+    }
+    a.logo:hover {
+        color: $rusty;
+    }
+    nav {
+        background-color: $azulote;
+    }
+    li.nav-item::after{
+        content:'';
+        display:block;
+        width:0px;
+        height:2px;
+        background:$clarito;
+        transition: 0.1s;
+    }
+    li.nav-item:hover::after{
+        width:100%;
+    }
+    .custom-toggler.navbar-toggler { 
+        border-color: $clarito; 
+    } 
+     .custom-toggler .navbar-toggler-icon { 
+    background-image: url( "data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(170, 122, 49, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+     }
+}
+
+body {
+    margin: 0;
+}
+
+.about {
+    padding-top: 7%;
+    padding-bottom: 7%;
+    color: $dark;
+    background-color: $back;
+
+}
+
+.home {
+    text-align: left;
+    padding: 0;
+    background-image: url("../images/pink2.jpg");
+    background-attachment: fixed;
+    background-color: $masclarito ;
+    background-size: cover;
+    height: 100vh;
+    color: $snow;
+    .centered {
+        padding-top:35vh;
+        color:$azulcito;
+        font-family: jubilat, serif;
+        z-index: 2;
+        font-size: 2.5em;
+        padding-left: 2rem;
+
+    }
+    #sub {
+        color: $darkrusty;
+        font-weight: 400;
+    }
+    
+    #learn button {
+        background-color: $azulote;
+        color:$back;
+        overflow: hidden;
+    }
+    #learn button:hover {
+        background-color: $azulotef;
+    }
+    
+}
+
+#hrabout {
+    align-self: center;
+    margin-left: auto;
+}
+
+#hrhome {
+    align-self: flex-start;
+    margin-left: 2rem;
+    opacity: 0.0;
+    animation: fadeinless 2s 1 forwards, separator-width 1s ease-out forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes separator-width {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100px;
+  }
+}
+
+@media screen and (min-width:575px) {
+    .home {
+        text-align: center;
+    }
+    .home .centered {
+        font-size: 3em;
+        padding-top:35vh;
+    }
+   #sub {
+        color: $clarito;
+        padding-left: 0;
+    }
+    #hrabout {
+        align-self: flex-start;
+    }
+    #hrhome {
+        align-self: center;
+        margin-left: auto;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .home {
+        text-align: center;
+    }
+    .home .centered {
+        font-size: 3.5em;
+        padding-top:35vh;
+    }
+    #sub {
+        color: $clarito;
+        padding-left: 0;
+    }
+    #hrabout {
+        align-self: flex-start;
+        margin-left: 0;
+    }
+    #hrhome {
+        align-self: center;
+        margin-left: auto;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .home {
+        text-align: center;
+    }
+    .home .centered {
+        font-size: 4.5em;
+        padding-top:35vh;
+    }
+   #sub {
+    color: $clarito;
+    padding-left: 0;
+   }
+   #hrabout {
+    align-self: flex-start;
+    margin-left: 0;
+    }
+    #hrhome {
+        align-self: center;
+        margin-left: auto;
+    }
+}
+
+   
+
+.myWork {
+    height: fit-content;
+    background-image: url("../images/blueback2.jpg");
+    background-size: cover;
+    background-color: $azulcito;
+    color: $snow;
+    padding-top: 3.2rem;
+    padding-bottom: 5rem;
+    .img-thumbnail {
+        opacity: 0.6;
+        transition: .5s;
+        box-shadow: $azulote 5px;
+        border-color: $rosita;
+    }
+    .img-thumbnail:hover {
+        opacity: 1;
+    }
+    h3 {
+        font-size: 20px;
+        color: $masclarito;
+        font-family: sans-serif;
+        font-weight: bold;
+    }
+    p {
+        opacity: 0.8;
+    }
+   
+}
+
+.myServices {
+    height: fit-content;
+    color: $dark;
+    background-color: $back;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    div.services {
+        color: $azulote;
+        border: solid 2px $rusty;
+        border-radius: 10px;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        transition: 0.5s;
+
+    }
+
+    div.services .iconO {
+        transition: all .5s ease;
+    }
+    div.services:hover {
+        background-color: #ffffff;
+        .iconO {
+            transform: rotate(-10deg)
+        }
+    }
+    #do {
+        color: $rusty;
+    }
+    
+}
+
+.btn-primary {
+    background-color: $rusty;
+    border-color: $azulote;
+    color: #fff;
+}
+.btn-primary:hover {
+    background-color: $rusty !important;
+    border-color: $snow;
+}
+
+.btn-primary:active {
+    background-color: $rusty !important;
+}
+
+#contact {
+    background-image: url("../images/pink2.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: $snow;
+    color: $azulote;
+    .form-control:focus {
+        border-color: $azulotec;
+        box-shadow:  0 0 10px $azulotec;
+      }
+    input::placeholder, textarea::placeholder {
+        font-weight: lighter;
+        font-style: italic;
+      }
+    label {
+        font-weight: 600;
+    }
+}
+
+footer {
+    padding: 0;
+    background-color: $azulotef;
+    text-decoration: none;
+    height: 6rem;
+    max-width: 100%;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+
+    p {
+        color: $snow;
+    }
+    li {
+        text-decoration: none;
+        list-style: none;
+    }
+    li a {
+        color: $snow;
+        font-size: 2em;
+        transition: .2s;
+    }
+    li a:hover {
+        color:$rusty;
+    }
+}
+
+h2, h3 {
+    font-family: jubilat, serif;
+}
+
+h2 {
+    font-size: 2.5em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+hr {
+    color:$azulote;
+    width: 100px;
+    border: solid 1px $clarito;
+    opacity: 0.7;
+
+}
+#hrwork {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+@keyframes fadein {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes fadeinless {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 0.7;
+    }
+  }
+
+iframe {
+    border: 1px solid $rusty;
+}
+
+
+
+
