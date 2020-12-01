@@ -96,6 +96,7 @@ body {
   color: #00c3ff;
   font-weight: 400;
   font-size: 1em;
+  text-align: center;
 }
 
 .more{
@@ -134,6 +135,7 @@ body {
 }
 .principal p{
   font-size: 16px;
+  text-align: center;
 }
 
 #slider {
