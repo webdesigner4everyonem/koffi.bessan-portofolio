@@ -66,6 +66,8 @@ body {
 }
 
 .about {
+  position: relative;
+  display: block;
   margin-bottom: -5px;
   padding-top: -7%;
   padding-bottom: -5%;
