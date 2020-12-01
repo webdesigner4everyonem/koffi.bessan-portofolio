@@ -129,11 +129,11 @@ body {
   text-align: center;
 }
 .principal h1{
-  font-size: 58px;
+  font-size: 45px;
   margin-bottom: 18px;
 }
 .principal p{
-  font-size: 18px;
+  font-size: 16px;
 }
 
 #slider {
@@ -209,7 +209,7 @@ body {
     text-align: center;
   }
   .content .centered {
-    font-size: 2em;
+    font-size: 3em;
     padding-top: 35vh;
   }
   #sub {
@@ -233,7 +233,7 @@ body {
     text-align: center;
   }
   .content .centered {
-    font-size: 2.5em;
+    font-size: 3.5em;
     padding-top: 35vh;
   }
   #sub {
@@ -258,7 +258,7 @@ body {
     text-align: center;
   }
   .content .centered {
-    font-size: 3.5em;
+    font-size: 4.5em;
     padding-top: 35vh;
   }
   #sub {
